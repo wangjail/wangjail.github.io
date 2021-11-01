@@ -6,20 +6,20 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Your Name / Site Title"
+locale                   : "zh-cn"
+title                    : "王勇 | Yong Wang"
 title_separator          : "-"
-name                     : &name "Your Name"
+name                     : &name "Yong Wang"
 description              : &description "personal description"
-url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      :https://github.com/wangjail/wangjail.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "zhanzxy5/zhanxianyuan"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
-read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
-talkmap_link             : false #change to true to add link to talkmap on talks page
+read_more                : "enabled" # if enabled, adds "Read more" links to excerpts
+talkmap_link             : true #change to true to add link to talkmap on talks page
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
@@ -80,15 +80,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Sidebar Name"
+  name             : "王勇 | Yong Wang"
   avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
-  location         : "Location"
+  bio              : "Research Assistant Professor at Institute for AI Industry Research (AIR), Tsinghua University"
+  location         : "Beijing, China"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            :
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  pubmed           : 
+  googlescholar    : "https://scholar.google.com/citations?user=pDMnGloAAAAJ"
+  email            : "zhanxianyuan@gmail.com"
+  researchgate     :  "https://www.researchgate.net/profile/Xianyuan_Zhan"
   uri              :
   bitbucket        :
   codepen          :
@@ -96,25 +96,26 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "academicpages"
+  github           : "zhanzxy5"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  linkedin         : "linkedin.com/in/xianyuan-zhan/"
+  orcid            : "https://orcid.org/0000-0002-3683-0554"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+  twitter          : #"replacethistwitterhandle"
   vine             :
-  weibo            :
+  weibo            : "https://www.weibo.com/bobcattheskywalker"
   xing             :
   youtube          :
   wikipedia        :
+  #publons          : "https://publons.com/researcher/453961/xianyuan-zhan/"
 
 
 # Reading Files
@@ -178,13 +179,28 @@ collections:
   teaching:
     output: true
     permalink: /:collection/:path/
-  publications:
+  publications_journal:
+    output: true
+    permalink: /:collection/:path/
+  publications_conference:
+    output: true
+    permalink: /:collection/:path/
+  publications_book:
+    output: true
+    permalink: /:collection/:path/
+  publications_thesis:
+    output: true
+    permalink: /:collection/:path/
+  projects:
     output: true
     permalink: /:collection/:path/
   portfolio:
     output: true
     permalink: /:collection/:path/
   talks:
+    output: true
+    permalink: /:collection/:path/
+  blogs:
     output: true
     permalink: /:collection/:path/
 
@@ -218,10 +234,46 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _publications
+   # _projects
   - scope:
       path: ""
-      type: publications
+      type: projects
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _publications_journal
+  - scope:
+      path: ""
+      type: publications_journal
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+ # _publications_conference
+  - scope:
+      path: ""
+      type: publications_conference
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+   # _publications_book
+  - scope:
+      path: ""
+      type: publications_book
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+   # _publications_thesis
+  - scope:
+      path: ""
+      type: publications_thesis
     values:
       layout: single
       author_profile: true
@@ -242,6 +294,14 @@ defaults:
       type: talks
     values:
       layout: talk
+      author_profile: true
+      share: true
+  # _blogs
+  - scope:
+      path: ""
+      type: blogs
+    values:
+      layout: single
       author_profile: true
       share: true
 
@@ -309,3 +369,5 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+theme: jekyll-theme-minimal
