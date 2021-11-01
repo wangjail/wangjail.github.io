@@ -86,9 +86,9 @@ author:
   location         : "Beijing, China"
   employer         :
   pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?user=pDMnGloAAAAJ"
+  googlescholar    : "https://scholar.google.com.hk/citations?hl=zh-CN&user=b539doAAAAAJ"
   email            : "wy3120180400@gmail.com"
-  researchgate     :  "https://www.researchgate.net/profile/Xianyuan_Zhan"
+  researchgate     :  #"https://www.researchgate.net/profile/Xianyuan_Zhan"
   uri              :
   bitbucket        :
   codepen          :
@@ -100,10 +100,10 @@ author:
   google_plus      :
   keybase          :
   instagram        :
-  impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
+  impactstory      : ##"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "linkedin.com/in/xianyuan-zhan/"
-  orcid            : "https://orcid.org/0000-0002-3683-0554"
+  linkedin         : "https://www.linkedin.com/in/%E5%8B%87-%E7%8E%8B-64299b1b7/"
+  orcid            : #"https://orcid.org/0000-0002-3683-0554"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
@@ -111,11 +111,11 @@ author:
   tumblr           :
   twitter          : #"replacethistwitterhandle"
   vine             :
-  weibo            : "https://www.weibo.com/bobcattheskywalker"
+  weibo            : #"https://www.weibo.com/bobcattheskywalker"
   xing             :
   youtube          :
   wikipedia        :
-  #publons          : "https://publons.com/researcher/453961/xianyuan-zhan/"
+  #publons          : #"https://publons.com/researcher/453961/xianyuan-zhan/"
 
 
 # Reading Files
